@@ -1,4 +1,4 @@
 # Redirects from what the browser requests to what we serve
 /random              http://api.icndb.com/jokes/random 200!
-/random/:amount firstName=:firstname lastName=:lastname  http://api.icndb.com/jokes/random/${amount}?firstName=${firstname}&lastName=${lastname}
+/random/:amount firstName=:firstname lastName=:lastname  http://api.icndb.com/jokes/random/:amount?firstName=:firstname&lastName=:lastname 200!
 
