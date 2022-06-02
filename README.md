@@ -13,6 +13,7 @@ This is a simple web project that generates random Chuck Norris Jokes to the use
 
 ## Live Link
  Coming Soon!!!
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7194e373-7c0e-4013-ad62-c3e2d887b36a/deploy-status)](https://app.netlify.com/sites/effortless-brigadeiros-7bdecf/deploys)
 
 ## Author
 
