@@ -12,7 +12,8 @@ This is a simple web project that generates random Chuck Norris Jokes to the use
 1. Passing only one name field will get you a customized joke with the first/last name as Chuck/Norris depending on the one you left empty.
 
 ## Live Link
- Coming Soon!!!
+ [Test it here](https://chucknorrisgenerator.netlify.app/)
+ 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7194e373-7c0e-4013-ad62-c3e2d887b36a/deploy-status)](https://app.netlify.com/sites/effortless-brigadeiros-7bdecf/deploys)
 
 ## Author
