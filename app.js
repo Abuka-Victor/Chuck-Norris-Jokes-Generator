@@ -51,7 +51,7 @@ function showMessage(message, statusClassName, targetClass, parentIdentifier = "
 
 function getPlainJoke(){
     const xhr = new XMLHttpRequest();
-    xhr.open("GET", "/random", true);
+    xhr.open("GET", "https://chucknorrisgenerator.netlify.app/random", true);
 
     xhr.onload = function(){
         if (this.status === 200){
