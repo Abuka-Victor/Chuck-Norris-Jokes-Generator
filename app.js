@@ -51,7 +51,7 @@ function showMessage(message, statusClassName, targetClass, parentIdentifier = "
 
 function getPlainJoke(){
     const xhr = new XMLHttpRequest();
-    xhr.open("GET", "http://api.icndb.com/jokes/random", true);
+    xhr.open("GET", "/random", true);
 
     xhr.onload = function(){
         if (this.status === 200){
@@ -106,7 +106,7 @@ function touchJoke(e){
 
 function getPlainJokes(amount = 1, firstname='Chuck', lastname='Norris'){
     const xhr = new XMLHttpRequest();
-    const url = `http://api.icndb.com/jokes/random/${amount}?firstName=${firstname}&lastName=${lastname}`;
+    const url = `random/${amount}?firstName=${firstname}&lastName=${lastname}`;
     xhr.open("GET", url, true);
 
     xhr.onload = function(){
