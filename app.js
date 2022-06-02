@@ -106,7 +106,7 @@ function touchJoke(e){
 
 function getPlainJokes(amount = 1, firstname='Chuck', lastname='Norris'){
     const xhr = new XMLHttpRequest();
-    const url = `random/${amount}?firstName=${firstname}&lastName=${lastname}`;
+    const url = `https://chucknorrisgenerator.netlify.app/random/${amount}?firstName=${firstname}&lastName=${lastname}`;
     xhr.open("GET", url, true);
 
     xhr.onload = function(){
