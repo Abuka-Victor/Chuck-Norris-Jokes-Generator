@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="shortcut icon" href="./39CDDA99-606C-4A60-A59A-D7D401D197F5.ico" type="image/x-icon">
+        <title>Chuck Norris Joke Generator | Chuck Norris | Jokes</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            footer{
+                text-align: center;
+                background: #444;
+                color: #fff;
+                padding: 10px;
+                font-size: larger;
+            }
+
+            .container{
+                min-height: 91vh;
+            }
+
+            ul{
+                list-style: none;
+            }
+
+            a{
+                color: #fff;
+            }
+
+            textarea{
+                width: 100%;
+                height: 20px;
+                resize: none;
+            }
+
+            .success, .error{
+            color: #fff;
+            padding: 10px;
+            margin: 5px 0 15px 0;
+            border-radius: 10px;
+        }
+
+            .success{
+                background: #00aa00;
+            }
+
+            .error{
+                background: #ff0000;
+            }
+            .clear-all{
+                color: #000;
+                text-decoration: none;
+                border: 1px solid #ccc;
+                padding: 10px;
+                border-radius: 5px;
+            }
+            .clear-all:hover{
+                border-color: #000;
+                color: #000;
+            }
+        </style>
+    </head>
+<body>
+    <div class="container">
+        <h1>Chuck Norris Joke Generator</h1>
+        <hr>
+        <form id="generator">
+            <p>The optional parameters enables you star in the joke, else, this is Chuck Norris' Show</p>
+            <div>
+                <label for="amount">Amount of Jokes (Leave empty for just one Joke)</label>
+                <input class="u-full-width" type="text" id="amount">
+            </div>
+            <div>
+                <label for="firstname">First Name (Optional)</label>
+                <input class="u-full-width" type="text" id="firstname">
+            </div>
+            <div>
+                <label for="lastname">Last Name (Optional)</label>
+                <input class="u-full-width" type="text" id="lastname">
+            </div>
+            <br>
+            <input type="submit" id="gen" class="u-full-width" value="Generate">
+        </form>
+        <div id="joke-div">
+            <h2>Jokes</h2>
+            <a href="#" class="clear-all">Clear All</a>
+            <hr>
+            <ul id="jokes">
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p id="footer"></p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
